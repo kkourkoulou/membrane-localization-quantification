@@ -1,8 +1,8 @@
------------------------------------------------------------------------------------
+
 -----------------------------------------------------------------------------------
            Quantification of protein localization on vesicle membranes
 -----------------------------------------------------------------------------------
------------------------------------------------------------------------------------
+
 
 This Python script calculates the radial and angular intensity profiles of GUVs 
 encapsulating septin and/or actin and quantifies the corresponding protein
