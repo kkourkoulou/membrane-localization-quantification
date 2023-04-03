@@ -1,6 +1,5 @@
 
------------------------------------------------------------------------------------
-           Quantification of protein localization on vesicle membranes
+Quantification of protein localization on vesicle membranes
 -----------------------------------------------------------------------------------
 
 
@@ -14,7 +13,7 @@ detected membrane width the average signal at a central area of the vesicle,
 normalized by the median signal within the detected membrane width.
 Negative values are clipped to 0.
 
------------------------------------------------------------------------------------
+
 Input
 -----------------------------------------------------------------------------------
 
@@ -30,8 +29,7 @@ Analysis parameters: See related comments in the main.py script.
 Function booleans:   Determine desired optional output apart from the localization
 		     quantification. If optional output is desired, assign True, 
                      otherwise assign False. 
-			   
------------------------------------------------------------------------------------
+			  
 Input files : Path and file names
 -----------------------------------------------------------------------------------
 
@@ -43,15 +41,14 @@ For every image the files necessary to run the script are:
 - tiff file(s) of the protein(s) present
 - csv file with DisGUVery's vesicle detection results
 
-  IMPORTANT NOTE: In the csv DisGUVery file the "#" should be deleted from the first
-                  column's header ("# id_vesicle" should be renamed " id_vesicle").
+> In the csv DisGUVery file the "#" should be deleted from the first column's header ("# id_vesicle" should be renamed " id_vesicle").
 
->The csv file name should be of the format:
+The csv file name should be of the format:
 "experiment_date-experiment_project_name-image_name-detected_vesicles"
 
-example: 20221012-sept_hex_pip2_0%-Region 1-detected_vesicles
+> example: 20221012-sept_hex_pip2_0%-Region 1-detected_vesicles
 
->The tiff file names should be of the format: 
+The tiff file names should be of the format: 
 "experiment_date-experiment_project_name-image_name-'...channel...'", where 
 '...channel...' should be:
 - 'C1' for the membrane.
@@ -59,10 +56,9 @@ example: 20221012-sept_hex_pip2_0%-Region 1-detected_vesicles
    present.
 - 'C3' for the actin channel in case both proteins are present.
 
-example: 20221012-sept_hex_pip2_0%-Region 1-C1
+> example: 20221012-sept_hex_pip2_0%-Region 1-C1
  
 
------------------------------------------------------------------------------------
 Output
 -----------------------------------------------------------------------------------
 A file containing the experiment information, the vesicle coordinates, the backgrond 
@@ -72,5 +68,3 @@ for each image analyzed.
 Additionally the intensity radial and angular profiles, the used masks and and image 
 overview with annotated vesicle centres are saved as a png file, if requested by the user.
 
------------------------------------------------------------------------------------
------------------------------------------------------------------------------------
